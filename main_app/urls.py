@@ -41,6 +41,8 @@ swaggerurlpatterns = [
    re_path(r'^redoc$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
 
+
+
 router = routers.DefaultRouter()
 router.register(r'clients', ClientViewSet)
 router.register(r'messages', MessageViewSet)
